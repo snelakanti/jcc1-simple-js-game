@@ -24,12 +24,12 @@ console.log(poneValue);
 var ptwoValue = ptwoHeight + (5 * ptwoAge);
 console.log(ptwoValue);
 
-// if (poneValue>ptwoValue){
-//     console.log(poneName +" "+ "wins!");
-// }
-// else if (ptwoValue>poneValue){
-//     console.log(ptwoName +" "+ "wins!");
-// }
-// else{
-//     console.log("Draw!")
-// }
+if (poneValue>ptwoValue){
+    alert(poneName +" "+ "wins!");
+}
+else if (ptwoValue>poneValue){
+    alert(ptwoName +" "+ "wins!");
+}
+else{
+    alert("Draw!")
+}
