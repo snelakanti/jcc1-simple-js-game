@@ -10,15 +10,19 @@ console.log(poneName + " is of " + poneAge + " years old and his height is " + "
 // var ptwoAge = 24;
 // var ptwoHeight = 172;
 
-// var ptwoName = prompt("Name 2?");
-// var ptwoAge = prompt("ptwoAge?");
-// var ptwoHeight = prompt("ptwoHeight?");
-// console.log(ptwoName + " is of " + ptwoAge + " years old and his height is " + " " + ptwoHeight);   
+var ptwoName = prompt("Name 2?");
+var tAge = prompt("ptwoAge?");
+var ptwoAge = parseInt(tAge);
+var tHeight = prompt("ptwoHeight?");
+var ptwoHeight = parseInt(tHeight);
+
+console.log(ptwoName + " is of " + ptwoAge + " years old and his height is " + " " + ptwoHeight);   
 
 
 var poneValue = poneHeight + (5 * poneAge);
 console.log(poneValue);
-// var ptwoValue = ptwoHeight + (5 * ptwoAge);
+var ptwoValue = ptwoHeight + (5 * ptwoAge);
+console.log(ptwoValue);
 
 // if (poneValue>ptwoValue){
 //     console.log(poneName +" "+ "wins!");
