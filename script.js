@@ -42,6 +42,5 @@ else if (ptwoValue>poneValue && ptwoValue>pthreeValue){
 else if(pthreeValue>poneValue && pthreeValue>ptwoValue){
     alert(pthreeName +" "+ "wins!" );
 }
-else if(poneValue===ptwoValue && ptwoValue===pthreeValue){
-    alert("Draw!")
+else{    alert("Draw!")
 }
