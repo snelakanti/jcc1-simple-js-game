@@ -18,11 +18,20 @@ var ptwoHeight = parseInt(tHeight);
 
 console.log(ptwoName + " is of " + ptwoAge + " years old and his height is " + " " + ptwoHeight);   
 
+var pthreeName = prompt("Name 3?");
+var thAge = prompt("pthreeAge?");
+var pthreeAge = parseInt(thAge);
+var thHeight = prompt("pthreeHeight?");
+var pthreeHeight = parseInt(thHeight);
+
+console.log(pthreeName + " is of " + pthAge + " years old and his height is " + " " + pthreeHeight); 
 
 var poneValue = poneHeight + (5 * poneAge);
 console.log(poneValue);
 var ptwoValue = ptwoHeight + (5 * ptwoAge);
 console.log(ptwoValue);
+var pthreeValue = pthreeHeight + (5 * pthreeAge);
+console.log(pthreeValue);
 
 if (poneValue>ptwoValue){
     alert(poneName +" "+ "wins!");
@@ -33,3 +42,4 @@ else if (ptwoValue>poneValue){
 else{
     alert("Draw!")
 }
+
