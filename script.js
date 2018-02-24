@@ -4,7 +4,7 @@ var poneAge = parseInt(oAge);
 var oHeight = prompt("poneHeight?");
 var poneHeight = parseInt(oHeight);
 
-console.log(poneName + " is of " + poneAge + " years old and his height is " + " " + poneHeight);   
+console.log(poneName + " is of " + poneAge + " years old and his height is " + " " + poneHeight);
 
 // var ptwoName = 'John';
 // var ptwoAge = 24;
@@ -16,7 +16,7 @@ var ptwoAge = parseInt(tAge);
 var tHeight = prompt("ptwoHeight?");
 var ptwoHeight = parseInt(tHeight);
 
-console.log(ptwoName + " is of " + ptwoAge + " years old and his height is " + " " + ptwoHeight);   
+console.log(ptwoName + " is of " + ptwoAge + " years old and his height is " + " " + ptwoHeight);
 
 var pthreeName = prompt("Name 3?");
 var thAge = prompt("pthreeAge?");
@@ -24,7 +24,7 @@ var pthreeAge = parseInt(thAge);
 var thHeight = prompt("pthreeHeight?");
 var pthreeHeight = parseInt(thHeight);
 
-console.log(pthreeName + " is of " + pthreeAge + " years old and his height is " + " " + pthreeHeight); 
+console.log(pthreeName + " is of " + pthreeAge + " years old and his height is " + " " + pthreeHeight);
 
 var poneValue = poneHeight + (5 * poneAge);
 console.log(poneValue);
@@ -33,14 +33,24 @@ console.log(ptwoValue);
 var pthreeValue = pthreeHeight + (5 * pthreeAge);
 console.log(pthreeValue);
 
-if (poneValue>ptwoValue && poneValue>pthreeValue){
-    alert(poneName +" "+ "wins!");
+if (poneValue > ptwoValue && poneValue > pthreeValue) {
+    alert(poneName + " " + "wins!");
 }
-else if (ptwoValue>poneValue && ptwoValue>pthreeValue){
-    alert(ptwoName +" "+ "wins!");
+else if (ptwoValue > poneValue && ptwoValue > pthreeValue) {
+    alert(ptwoName + " " + "wins!");
 }
-else if(pthreeValue>poneValue && pthreeValue>ptwoValue){
-    alert(pthreeName +" "+ "wins!" );
+else if (pthreeValue > poneValue && pthreeValue > ptwoValue) {
+    alert(pthreeName + " " + "wins!");
 }
-else{    alert("Draw!")
+else if (poneValue === ptwoValue && ptwoValue === pthreeValue) {
+    alert("Draw!");
+}
+else if (poneValue === ptwoValue && poneValue > pthreeValue && ptwoValue > pthreeValue) {
+    alert(poneName + " and " + ptwoName + " win! ");
+}
+else if (ptwoValue === pthreeValue && ptwoValue > poneValue && pthreeValue > poneValue) {
+    alert(ptwoName + " and " + pthreeName + " win! ");
+}
+else if (poneValue === pthreeValue && poneValue > ptwoValue && pthreeValue > ptwoValue) {
+    alert(poneName + " and " + pthreeName + " win! ");
 }
